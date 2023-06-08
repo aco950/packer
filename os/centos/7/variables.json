@@ -1,0 +1,12 @@
+{
+  "iso_url": "http://mirror.cs.pitt.edu/centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso",
+  "iso_checksum": "07b94e6b1a0b0260b94c83d6bb76b26bf7a310dc78d7a9c7432809fb9bc6194a",
+  "vnc_port_min": "5900",
+  "vnc_port_max": "5999",
+  "disk_size": "8192M",
+  "memory": "2048",
+  "cpus": "2",
+  "vm_name": "centos7.qcow2",
+  "output_directory": "/data/templates/os/centos/7"
+}
+

@@ -1,0 +1,32 @@
+{
+  "builders": [
+    {
+      "type": "qemu",
+      "accelerator": "kvm",
+      "iso_url": "{{ user `iso_url` }}",
+      "iso_checksum": "{{ user `iso_checksum` }}",
+      "headless": true,
+      "vnc_bind_address": "0.0.0.0",
+      "vnc_port_min": "{{ user `vnc_port_min` }}",
+      "vnc_port_max": "{{ user `vnc_port_max` }}",
+      "ssh_host": "127.0.0.1",
+      "ssh_username": "{{ user `ssh_username` }}",
+      "ssh_password": "{{ user `ssh_password` }}",
+      "pause_before_connecting": "5m",
+      "ssh_timeout": "5m",
+      "disk_interface": "virtio",
+      "disk_size": "{{ user `disk_size` }}",
+      "format": "qcow2",
+      "memory": "{{ user `memory` }}",
+      "cpus": "{{ user `cpus` }}",
+      "vm_name": "{{ user `vm_name` }}",
+      "net_device": "virtio-net",
+      "output_directory": "{{ user `output_directory` }}",
+      "http_directory": "./http",
+      "boot_wait": "10s",
+      "boot_command": [
+        "<tab> inst.sshd inst.text inst.ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/anaconda-ks.cfg<enter><wait>"
+      ]
+    }
+  ]
+}
