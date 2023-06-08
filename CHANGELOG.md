@@ -8,6 +8,6 @@
 
 - Initial commit.
 
-[1.0.1]: https://github.com/aco950/packer/releases/tag/v1.0.0
+[1.0.1]: https://github.com/aco950/packer/releases/tag/v1.0.1
 [1.0.0]: https://github.com/aco950/packer/releases/tag/v1.0.0
 
