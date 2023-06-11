@@ -1,0 +1,7 @@
+#
+# .gitignore
+#
+*.bak
+*.log
+*.txt
+secrets.json

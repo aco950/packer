@@ -1,3 +1,15 @@
+# [1.1.0] (June 11, 2023)
+
+### Added
+
+- Added Packer instructions for creating a common image that will be
+  used to standardize all nodes (see `common`).
+
+- Added Packer instructions for creating an image that will be used for 
+  standardizing Consul server nodes (see `consul-install` and `consul`).
+
+- Added a `.gitignore` inside this repo's root directory.
+
 # [1.0.2] (June 10, 2023)
 
 ### Changed
@@ -21,6 +33,7 @@
 
 - Initial commit.
 
+[1.1.0]: https://github.com/aco950/packer/releases/tag/v1.1.0
 [1.0.2]: https://github.com/aco950/packer/releases/tag/v1.0.2
 [1.0.1]: https://github.com/aco950/packer/releases/tag/v1.0.1
 [1.0.0]: https://github.com/aco950/packer/releases/tag/v1.0.0

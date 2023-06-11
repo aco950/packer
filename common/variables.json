@@ -1,0 +1,13 @@
+{
+  "iso_url": "/data/templates/os/centos/7/centos7.qcow2",
+  "iso_checksum": "none",
+  "vnc_port_min": "5900",
+  "vnc_port_max": "5999",
+  "disk_size": "8192M",
+  "memory": "1024",
+  "vm_name": "common.qcow2",
+  "output_directory": "/data/templates/common",
+  "playbook_file": "../../ansible/roles/common/site.yml",
+  "role_paths": "../../ansible/roles/common"
+}
+
