@@ -11,7 +11,7 @@ PACKER_LOG_PATH=./packer.log; export PACKER_LOG_PATH
 dest_dir="$(cat variables.json | jq .output_directory | sed s/\"//g)"
 
 if [ -d "$dest_dir" ]; then
-	rm -rfv "$dest_dir"
+    rm -rfv "$dest_dir"
 fi
 
 # Check for variable files and use them if they exist:
