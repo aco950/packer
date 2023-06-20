@@ -1,0 +1,13 @@
+{
+  "iso_url": "/data/templates/nomad-install/nomad_install.qcow2",
+  "iso_checksum": "none",
+  "vnc_port_min": "5900",
+  "vnc_port_max": "5999",
+  "disk_size": "8192M",
+  "memory": "1024",
+  "vm_name": "nomad.qcow2",
+  "output_directory": "/data/templates/nomad",
+  "playbook_file": "../../ansible/roles/nomad/site.yml",
+  "role_paths": "../../ansible/roles/nomad"
+}
+

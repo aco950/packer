@@ -1,3 +1,10 @@
+# [1.2.0] (June 19, 2023)
+
+### Added
+
+- Added Packer instructions for creating an image that will be used for 
+  standardizing Nomad server nodes (see `nomad-install` and `nomad`).
+
 # [1.1.1] (June 12, 2023)
 
 ### Fixed
@@ -39,6 +46,7 @@
 
 - Initial commit.
 
+[1.2.0]: https://github.com/aco950/packer/releases/tag/v1.2.0
 [1.1.1]: https://github.com/aco950/packer/releases/tag/v1.1.1
 [1.1.0]: https://github.com/aco950/packer/releases/tag/v1.1.0
 [1.0.2]: https://github.com/aco950/packer/releases/tag/v1.0.2

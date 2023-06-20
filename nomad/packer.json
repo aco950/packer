@@ -1,0 +1,47 @@
+{
+  "builders": [
+    {
+      "type": "qemu",
+      "accelerator": "kvm",
+      "iso_url": "{{ user `iso_url` }}",
+      "iso_checksum": "{{ user `iso_checksum` }}",
+      "disk_image": "true",
+      "use_backing_file": "false",
+      "headless": "true",
+      "vnc_bind_address": "0.0.0.0",
+      "vnc_port_min": "{{ user `vnc_port_min`}}",
+      "vnc_port_max": "{{ user `vnc_port_max`}}",
+      "ssh_host": "127.0.0.1",
+      "ssh_username": "{{ user `ssh_username` }}",
+      "ssh_password": "{{ user `ssh_password` }}",
+      "pause_before_connecting": "0m",
+      "ssh_timeout": "5m",
+      "disk_interface": "virtio",
+      "disk_size": "{{ user `disk_size` }}",
+      "format": "qcow2",
+      "memory": "{{ user `memory` }}",
+      "cpus": "2",
+      "vm_name": "{{ user `vm_name` }}",
+      "net_device": "virtio-net",
+      "output_directory": "{{ user `output_directory` }}",
+      "shutdown_command": "shutdown -P now"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "ansible-local",
+      "playbook_file": "{{ user `playbook_file` }}",
+      "role_paths": [
+        "../../ansible/roles/nomad",
+        "../../ansible/roles/consul-client",
+        "../../ansible/roles/cloud-init"
+      ],
+      "extra_arguments": ["-u root", "-vvv"]
+    }
+  ],
+  "sensitive-variables": [
+    "ssh_username",
+    "ssh_password"
+  ]
+}
+
