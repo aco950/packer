@@ -1,3 +1,9 @@
+# [1.2.1] (June 23, 2023)
+
+### Fixed
+
+-  Cleaned up spacing for consistency.
+
 # [1.2.0] (June 19, 2023)
 
 ### Added
@@ -46,6 +52,7 @@
 
 - Initial commit.
 
+[1.2.1]: https://github.com/aco950/packer/releases/tag/v1.2.1
 [1.2.0]: https://github.com/aco950/packer/releases/tag/v1.2.0
 [1.1.1]: https://github.com/aco950/packer/releases/tag/v1.1.1
 [1.1.0]: https://github.com/aco950/packer/releases/tag/v1.1.0
