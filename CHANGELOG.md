@@ -1,3 +1,24 @@
+# [2.0.0] (June 25, 2023)
+
+### Changed
+
+- Set `os/centos/7/run.sh` as executable for consistency.
+
+- Added `yum makecache` in `common/packer.json` for increased 
+  reliability by downloading and making usable all the metadata for the 
+  currently enabled yum repositories. Equivalent to `apt-get update` in
+  Debian/Ubuntu.
+
+- Renamed `consul` folder to `consul-server` for clarity, and updated
+  related `*.json` files to reflect changes. 
+
+- Renamed `nomad` folder to `nomad-server` for clarity, and updated
+  related `*.json` files to reflect changes. 
+
+- Updated `nomad-install/packer.json` and `nomad-install/variables.json`
+  in order to consolidate tasks. Nodes where Nomad will be installed 
+  will also be Consul clients.
+
 # [1.2.1] (June 23, 2023)
 
 ### Fixed
@@ -52,6 +73,7 @@
 
 - Initial commit.
 
+[2.0.0]: https://github.com/aco950/packer/releases/tag/v2.0.0
 [1.2.1]: https://github.com/aco950/packer/releases/tag/v1.2.1
 [1.2.0]: https://github.com/aco950/packer/releases/tag/v1.2.0
 [1.1.1]: https://github.com/aco950/packer/releases/tag/v1.1.1

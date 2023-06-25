@@ -7,7 +7,6 @@
   "memory": "1024",
   "vm_name": "nomad_install.qcow2",
   "output_directory": "/data/templates/nomad-install",
-  "playbook_file": "../../ansible/roles/nomad-install/site.yml",
-  "role_paths": "../../ansible/roles/nomad-install"
+  "playbook_file": "../../ansible/roles/nomad-install/site.yml"
 }
 

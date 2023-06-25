@@ -32,7 +32,8 @@
       "type": "ansible-local",
       "playbook_file": "{{ user `playbook_file` }}",
       "role_paths": [
-        "{{ user `role_paths` }}"
+        "../../ansible/roles/consul-client",
+        "../../ansible/roles/nomad-install"
       ],
       "extra_arguments": ["-u root", "-vvv"]
     }

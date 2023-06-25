@@ -5,8 +5,8 @@
   "vnc_port_max": "5999",
   "disk_size": "8192M",
   "memory": "1024",
-  "vm_name": "consul.qcow2",
-  "output_directory": "/data/templates/consul",
-  "playbook_file": "../../ansible/roles/consul/site.yml"
+  "vm_name": "consul_server.qcow2",
+  "output_directory": "/data/templates/consul-server",
+  "playbook_file": "../../ansible/roles/consul-server/site.yml"
 }
 
