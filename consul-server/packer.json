@@ -33,10 +33,15 @@
       "playbook_file": "{{ user `playbook_file` }}",
       "role_paths": [
         "../../ansible/roles/consul-server",
-        "../../ansible/roles/cloud-init",
         "../../ansible/roles/bind"
       ],
       "extra_arguments": ["-u root", "-vvv"]
+    },
+    {
+      "type": "shell",
+        "inline": [
+          "systemctl enable cloud-init"
+        ]
     }
   ],
   "sensitive-variables": [
