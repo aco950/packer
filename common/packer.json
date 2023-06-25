@@ -33,7 +33,7 @@
       "inline": [
         "yum makecache",
         "yum -y install epel-release",
-        "yum -y install ansible acpid"
+        "yum -y install ansible acpid cloud-init"
       ]
     },
     {
